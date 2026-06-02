@@ -1949,32 +1949,6 @@ win.document.close();
 })();
 </script>
 
-</body></html>`);
-    win.document.close();
-  };
-
-  // 메인 시각화 카드의 문구와 수치 라벨을 더 직관적으로 교체
-  const oldRenderMainCalc = window.renderMainCalc || null;
-  if(oldRenderMainCalc){
-    window.renderMainCalc=function(){
-      oldRenderMainCalc();
-      const root=document.querySelector('#smain-calc, #main-calc, [data-section="calc"]') || document;
-      root.innerHTML=root.innerHTML
-        .replaceAll('함께하는 날','부모님과 마주 앉는 날')
-        .replaceAll('명절','함께 보낼 명절')
-        .replaceAll('생신','챙겨드릴 생신')
-        .replaceAll('함께 찍을 사진','남길 수 있는 사진');
-    };
-  }
-
-  // 이미 화면에 들어와 있을 때도 즉시 반영
-  setTimeout(()=>{
-    document.querySelectorAll('input,textarea,select').forEach(el=>{el.style.color='#244f40';el.style.webkitTextFillColor='#244f40';});
-    if($id('s5-tabs')) initS5();
-  },0);
-})();
-</script>
-
 
 <script id="final-functional-override">
 (function(){

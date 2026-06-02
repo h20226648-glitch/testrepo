@@ -3,7 +3,12 @@
     "allow": [
       "PowerShell(\\(Get-Content \"c:\\\\Users\\\\허동균\\\\OneDrive\\\\Desktop\\\\스텔창\\\\test.html\" -Raw\\).Length)",
       "PowerShell(\\(Get-Content \"c:\\\\Users\\\\허동균\\\\OneDrive\\\\Desktop\\\\스텔창\\\\test.html\"\\).Count)",
-      "PowerShell([System.IO.File]::ReadAllLines\\(\"c:\\\\Users\\\\허동균\\\\OneDrive\\\\Desktop\\\\스텔창\\\\index.html\", [System.Text.Encoding]::UTF8\\).Count)"
+      "PowerShell([System.IO.File]::ReadAllLines\\(\"c:\\\\Users\\\\허동균\\\\OneDrive\\\\Desktop\\\\스텔창\\\\index.html\", [System.Text.Encoding]::UTF8\\).Count)",
+      "PowerShell($lines = [System.IO.File]::ReadAllLines\\('c:\\\\Users\\\\허동균\\\\OneDrive\\\\Desktop\\\\스텔창\\\\index.html'\\); $lines[2366..2450] | ForEach-Object -Begin {$i=2367} -Process { \"$i`: $_\"; $i++ })",
+      "PowerShell($lines = [System.IO.File]::ReadAllLines\\('c:\\\\Users\\\\허동균\\\\OneDrive\\\\Desktop\\\\스텔창\\\\index.html'\\); $lines[2450..2550] | ForEach-Object -Begin {$i=2451} -Process { \"$i`: $_\"; $i++ })",
+      "PowerShell($lines = [System.IO.File]::ReadAllLines\\('c:\\\\Users\\\\허동균\\\\OneDrive\\\\Desktop\\\\스텔창\\\\index.html'\\); $lines[2550..2650] | ForEach-Object -Begin {$i=2551} -Process { \"$i`: $_\"; $i++ })",
+      "PowerShell($lines = [System.IO.File]::ReadAllLines\\('c:\\\\Users\\\\허동균\\\\OneDrive\\\\Desktop\\\\스텔창\\\\index.html'\\); $lines[2650..2762] | ForEach-Object -Begin {$i=2651} -Process { \"$i`: $_\"; $i++ })",
+      "PowerShell($lines = [System.IO.File]::ReadAllLines\\('c:\\\\Users\\\\허동균\\\\OneDrive\\\\Desktop\\\\스텔창\\\\index.html'\\); $lines[2379..2420] | ForEach-Object -Begin {$i=2380} -Process { \"$i`: $_\"; $i++ })"
     ]
   }
 }
