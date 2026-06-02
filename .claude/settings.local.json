@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "PowerShell(\\(Get-Content \"c:\\\\Users\\\\허동균\\\\OneDrive\\\\Desktop\\\\스텔창\\\\test.html\" -Raw\\).Length)",
-      "PowerShell(\\(Get-Content \"c:\\\\Users\\\\허동균\\\\OneDrive\\\\Desktop\\\\스텔창\\\\test.html\"\\).Count)"
+      "PowerShell(\\(Get-Content \"c:\\\\Users\\\\허동균\\\\OneDrive\\\\Desktop\\\\스텔창\\\\test.html\"\\).Count)",
+      "PowerShell([System.IO.File]::ReadAllLines\\(\"c:\\\\Users\\\\허동균\\\\OneDrive\\\\Desktop\\\\스텔창\\\\index.html\", [System.Text.Encoding]::UTF8\\).Count)"
     ]
   }
 }
